@@ -86,7 +86,7 @@ export default class ModalBackground extends React.Component {
       zIndex: this.props.zIndex,
     };
 
-    return <div style={style}>
+    return <div style={style} className={this.props.className}>
       <div style={overlayStyle}/>
       <div style={containerStyle}>{this.getChild()}</div>
     </div>;
